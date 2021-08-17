@@ -10,8 +10,11 @@ class FutbolistaController extends Controller{
 
         $myFutbolista = new FutbolistaModel();
         $data['futbolista'] = $myFutbolista -> orderBy('idFutbolista', 'ASC') -> findAll();
+       
+        $data['header'] = view('templates/headerTemplate');
+        $data['footer'] = view('templates/footerTemplate');
 
-        return view('futbolistaView');
+        return view('futbolistaView', $data);
 
     }
 
