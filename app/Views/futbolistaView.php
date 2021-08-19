@@ -1,6 +1,5 @@
 <?= $header; ?> <!-- Header -->
 
-<a href="<?= base_url('insert') ?>" class="btn btn-primary mb-1"> Insert a footballer </a>
 
             <table class="table table-light table-responsive">
                 <thead class="thead-light">
@@ -44,5 +43,8 @@
 
                     </tbody>
             </table>
+            <div class="insert-button-container">
+                <a href="<?= base_url('insert') ?>" class="btn btn-primary mb-1"> Insert a footballer </a>
+            </div>
 
 <?= $footer; ?> <!-- Footer -->
