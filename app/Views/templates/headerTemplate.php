@@ -13,4 +13,17 @@
             /* print_r($futbolista); */
         ?> -->
 
-        <div class="container">
+        <div class="container mt-3">
+        <?php
+            if(session('message')){
+        ?>
+        <div class="alert alert-danger" role="alert">
+            <?php
+                echo session('message');
+            ?>
+        </div>
+
+        <?php
+        
+            }
+        ?>

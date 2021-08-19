@@ -35,8 +35,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'FutbolistaController::index');
 $routes->get('futbolista', 'FutbolistaController::index');
 $routes->get('insert', 'FutbolistaController::insert');
+$routes->get('delete/(:num)', 'FutbolistaController::delete/$1');
+$routes->get('edit/(:num)', 'FutbolistaController::edit/$1');
+
 $routes->post('save', 'FutbolistaController::save');
-$routes->get('delete/:(num)', 'FutbolistaController::delete/$1');
+$routes->post('update', 'FutbolistaController::update');
 
 /*
  * --------------------------------------------------------------------
