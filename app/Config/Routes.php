@@ -34,6 +34,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'FutbolistaController::index');
 $routes->get('futbolista', 'FutbolistaController::index');
+$routes->get('insert', 'FutbolistaController::insert');
+$routes->post('save', 'FutbolistaController::save');
+$routes->get('delete/:(num)', 'FutbolistaController::delete/$1');
 
 /*
  * --------------------------------------------------------------------

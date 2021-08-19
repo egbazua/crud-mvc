@@ -1,5 +1,7 @@
 <?= $header ?> <!-- Header -->
 
+<a href="<?= base_url('insert') ?>"> Insert a footballer </a>
+
             <table class="table table-light table-responsive">
                 <thead class="thead-light">
                     <tr>
@@ -30,7 +32,10 @@
                             <td> <?= $value['posicion']; ?> </td>
                             <td> <?= $value['idClub']; ?> </td>
                             <td> <?= $value['idSeleccion']; ?> </td>
-                            <td>Editar / Borrar</td>
+                            <td>
+                                Editar /
+                                <a href="<?= base_url('delete/' . $value['idFutbolista']);  ?>" type="button" class="btn btn-danger">Delete</a>
+                            </td>
                         </tr>
 
                         <?php
